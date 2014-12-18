@@ -10,9 +10,7 @@
 		#ACTION_FORMULAIRE{#ENV{action}}
 
 		<ul>
-			[(#SAISIE{input, exemple,
-				label=<:selectize:cfg_exemple:>,
-				explication=<:selectize:cfg_exemple_explication:>})]
+      #GENERER_SAISIES{#ENV{_saisies}}
 		</ul>
 
 		<input type="hidden" name="_meta_casier" value="selectize" />
