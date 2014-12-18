@@ -17,4 +17,4 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'titre_page_configurer_selectize' => 'Configuration de Selectize',
 );
 
-?>
+?>    'class' => 'Selecteur jQuery pour selectize'
