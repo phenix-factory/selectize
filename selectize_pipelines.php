@@ -18,9 +18,17 @@ function selectize_jquery_plugins($scripts) {
     return $scripts;
 }
 
+function selectize_insert_head($flux) {
+
+    $flux .= '<script type="text/javascript" src="'.produire_fond_statique('javascript/spip.selectize.js').'"></script>';
+
+    return $flux;
+}
+
 function selectize_insert_head_css($flux) {
 
     $flux .= '<link rel="stylesheet" href="'.find_in_path('lib/selectize/selectize.css').'" />';
 
     return $flux;
+}
 }
