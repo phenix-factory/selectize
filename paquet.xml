@@ -42,6 +42,7 @@
 
 	<pipeline nom="insert_head_css" inclure="selectize_pipelines.php" />
 	<pipeline nom="insert_head" inclure="selectize_pipelines.php" />
+	<pipeline nom="header_prive" inclure="selectize_pipelines.php" />
 	<pipeline nom="jquery_plugins" inclure="selectize_pipelines.php" />
 
 

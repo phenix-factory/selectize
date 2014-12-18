@@ -31,4 +31,11 @@ function selectize_insert_head_css($flux) {
 
     return $flux;
 }
+
+function selectize_header_prive($flux) {
+
+    $flux .= '<link rel="stylesheet" href="'.find_in_path('lib/selectize/selectize.css').'" />';
+    $flux .= '<script type="text/javascript" src="'.produire_fond_statique('javascript/spip.selectize.js').'"></script>';
+
+    return $flux;
 }
