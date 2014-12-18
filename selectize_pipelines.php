@@ -10,15 +10,17 @@
  */
 
 if (!defined('_ECRIRE_INC_VERSION')) return;
-	
 
-/*
- * Un fichier de pipelines permet de regrouper
- * les fonctions de branchement de votre plugin
- * sur des pipelines existants.
- */
+function selectize_jquery_plugins($scripts) {
 
+    $scripts[] = 'lib/selectize/selectize.js';
 
+    return $scripts;
+}
 
+function selectize_insert_head_css($flux) {
 
-?>
+    $flux .= '<link rel="stylesheet" href="'.find_in_path('lib/selectize/selectize.css').'" />';
+
+    return $flux;
+}
