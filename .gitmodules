@@ -1,0 +1,3 @@
+[submodule "lib/selectize.js"]
+	path = lib/selectize.js
+	url = git@github.com:brianreavis/selectize.js.git
