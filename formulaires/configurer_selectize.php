@@ -1,5 +1,7 @@
 <?php
 
+if (!defined("_ECRIRE_INC_VERSION")) return;
+
 function formulaires_configurer_selectize_saisies_dist() {
 
     $saisies = array(
