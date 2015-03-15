@@ -9,7 +9,8 @@ function formulaires_configurer_selectize_saisies_dist() {
             'saisie' => 'input',
             'options' => array(
                 'nom' => 'class',
-                'label' => _T('selectize:class')
+                'label' => _T('selectize:class'),
+                'explication' => _T('selectize:class_explication')
             )
         )
     );
@@ -20,5 +21,4 @@ function formulaires_configurer_selectize_saisies_dist() {
 function formulaires_configurer_selectize_charger_dist() {
     include_spip('inc/config');
     return lire_config('selectize');
-
 }
