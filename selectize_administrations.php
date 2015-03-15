@@ -48,6 +48,11 @@ function selectize_upgrade($nom_meta_base_version, $version_cible) {
 	#	array('sql_alter','TABLE spip_xx CHANGE texte petit_texte mediumtext NOT NULL default \'\''),
 	# );
 	# ...
+    $config_default = array('class' => '');
+// Tableau de la configuration par défaut
+    $maj['create'] = array(
+        array('ecrire_meta', 'selectize', serialize($config_default))
+    );
 
 	include_spip('base/upgrade');
 	maj_plugin($nom_meta_base_version, $version_cible, $maj);
