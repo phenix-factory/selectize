@@ -13,7 +13,7 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
 
 // Charger selectize en tant que plugin jQuery
 function selectize_jquery_plugins($scripts) {
-    $scripts[] = 'lib/selectize.js/dist/js/selectize.js';
+    $scripts[] = 'lib/selectize.js/dist/js/standalone/selectize.js';
     return $scripts;
 }
 
