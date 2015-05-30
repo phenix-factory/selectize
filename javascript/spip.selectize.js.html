@@ -5,7 +5,7 @@ $(function () {
 
     // Piqué à Chosen. Les li des formulaire de spip sont en overflow: hidden
     // Cela fait créer un joli bug avec selectize, qu'on corrige avec ce système
-    $(".selectize, #CONFIG{selectize/class}").parent("li").each(function () {
+    $(".selectize[, (#CONFIG{selectize/class})]").parent("li").each(function () {
       $(this).css("overflow", "visible");
     });
 
